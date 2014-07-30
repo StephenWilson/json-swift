@@ -11,6 +11,8 @@
 		7D7BD7CE195418CC00AC2E4E /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7BD7C2195418CB00AC2E4E /* JSON.framework */; };
 		7D7BD7D5195418CC00AC2E4E /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BD7D4195418CC00AC2E4E /* JSONTests.swift */; };
 		7D7BD7E119541A2800AC2E4E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BD7E019541A2800AC2E4E /* JSON.swift */; };
+		9AE02C601989124F00691E91 /* JSONiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE02C5F1989124F00691E91 /* JSONiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AE02C74198913F900691E91 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BD7E019541A2800AC2E4E /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		7D7BD7D3195418CC00AC2E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D7BD7D4195418CC00AC2E4E /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		7D7BD7E019541A2800AC2E4E /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		9AE02C5B1989124F00691E91 /* JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE02C5E1989124F00691E91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE02C5F1989124F00691E91 /* JSONiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONiOS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AE02C571989124F00691E91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +97,7 @@
 			children = (
 				7D7BD7C4195418CB00AC2E4E /* JSON */,
 				7D7BD7D1195418CC00AC2E4E /* JSONTests */,
+				9AE02C5C1989124F00691E91 /* JSONiOS */,
 				7D7BD7C3195418CB00AC2E4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +107,7 @@
 			children = (
 				7D7BD7C2195418CB00AC2E4E /* JSON.framework */,
 				7D7BD7CD195418CC00AC2E4E /* JSONTests.xctest */,
+				9AE02C5B1989124F00691E91 /* JSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +147,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9AE02C5C1989124F00691E91 /* JSONiOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AE02C5F1989124F00691E91 /* JSONiOS.h */,
+				9AE02C5D1989124F00691E91 /* Supporting Files */,
+			);
+			path = JSONiOS;
+			sourceTree = "<group>";
+		};
+		9AE02C5D1989124F00691E91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE02C5E1989124F00691E91 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -141,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7BD7C8195418CB00AC2E4E /* JSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE02C581989124F00691E91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE02C601989124F00691E91 /* JSONiOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +226,24 @@
 			productReference = 7D7BD7CD195418CC00AC2E4E /* JSONTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9AE02C5A1989124F00691E91 /* JSONiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE02C721989125000691E91 /* Build configuration list for PBXNativeTarget "JSONiOS" */;
+			buildPhases = (
+				9AE02C561989124F00691E91 /* Sources */,
+				9AE02C571989124F00691E91 /* Frameworks */,
+				9AE02C581989124F00691E91 /* Headers */,
+				9AE02C591989124F00691E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONiOS;
+			productName = JSONiOS;
+			productReference = 9AE02C5B1989124F00691E91 /* JSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +259,10 @@
 					7D7BD7CC195418CC00AC2E4E = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 7D7BD7C1195418CB00AC2E4E;
+					};
+					9AE02C5A1989124F00691E91 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = KR9EVGDM65;
 					};
 				};
 			};
@@ -219,6 +280,7 @@
 			targets = (
 				7D7BD7C1195418CB00AC2E4E /* JSON */,
 				7D7BD7CC195418CC00AC2E4E /* JSONTests */,
+				9AE02C5A1989124F00691E91 /* JSONiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +294,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7D7BD7CB195418CC00AC2E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE02C591989124F00691E91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,6 +323,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7BD7D5195418CC00AC2E4E /* JSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE02C561989124F00691E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE02C74198913F900691E91 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +514,55 @@
 			};
 			name = Release;
 		};
+		9AE02C6E1989125000691E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JSONiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JSON;
+				PROVISIONING_PROFILE = "7C690078-AFDC-48F0-9483-CB3E64A7F86A";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AE02C6F1989125000691E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JSONiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JSON;
+				PROVISIONING_PROFILE = "7C690078-AFDC-48F0-9483-CB3E64A7F86A";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,6 +589,15 @@
 			buildConfigurations = (
 				7D7BD7DC195418CC00AC2E4E /* Debug */,
 				7D7BD7DD195418CC00AC2E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE02C721989125000691E91 /* Build configuration list for PBXNativeTarget "JSONiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE02C6E1989125000691E91 /* Debug */,
+				9AE02C6F1989125000691E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
